@@ -50,7 +50,7 @@ for reg_coeff_lambda in reg_coeff_lambdas:
     # print("Optimal point: ", Kstar)
 
     logLstar = Pstar - (reg_coeff_lambda * reg_term(Kstar, n))
-    print("Optimal logLikelyhood:", logLstar)
+    print("Optimal log-Likelihood:", logLstar)
 
     # print("Kstar:", Kstar)
     # print("isclose:", np.isclose(Kstar, np.zeros((n, n)), atol=1.0e-6))
